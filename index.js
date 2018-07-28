@@ -123,7 +123,7 @@ function moveDodger(e) {
         moveDodgerLeft();
     }
     
-    if (e.which = 39){
+    if (e.which == 39){
         moveDodgerRight();
     }
 }
