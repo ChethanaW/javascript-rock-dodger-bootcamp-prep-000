@@ -81,6 +81,13 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
+      if (checkcollision(createRock(rock)) == true){
+        endGame()
+      }
+      else{
+          moveRock()
+      }
+      
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
@@ -121,6 +128,13 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
+    if( e.which = 37){
+        moveDodgerLeft()
+    }
+    
+    if (e.which = 39){
+        moveDodgerRight()
+    }
 }
 
 function moveDodgerLeft() {
@@ -129,6 +143,10 @@ function moveDodgerLeft() {
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
+    var left =0
+    DODGER.style.left = `${top += 4}px`
+    
+    window.requestAnimationFrame(moveDodgerLeft())
 }
 
 function moveDodgerRight() {
@@ -137,6 +155,7 @@ function moveDodgerRight() {
    * This function should move DODGER to the right
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
+     window.requestAnimationFrame(step)
 }
 
 /**
