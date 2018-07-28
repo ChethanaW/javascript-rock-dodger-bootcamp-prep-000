@@ -119,11 +119,11 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-    if( e.which = 37){
+    if( e == 37){
         moveDodgerLeft();
     }
     
-    if (e.which = 39){
+    if (e == 39){
         moveDodgerRight();
     }
 }
