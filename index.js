@@ -119,7 +119,7 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-    if( e.which == LEFT_ARROW){
+    if( e.which == 37){
         moveDodgerLeft();
     }
     
@@ -135,7 +135,7 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
     var left =0;
-    DODGER.style.left = '${top += 4}px'
+    DODGER.style.left = `${left += 4}px`
     
     window.requestAnimationFrame(moveDodgerLeft())
 }
